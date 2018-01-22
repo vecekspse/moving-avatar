@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.playground {
+  border: 2px solid black;
+  margin: 1rem auto;
+  width: 80%;
+  height: 600px;
+  position: relative;
+}
+.playground #avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000; 
+}
+.playground .food {
+  position: absolute;
+  z-index: 0;
+}
