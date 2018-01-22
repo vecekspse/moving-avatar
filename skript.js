@@ -37,50 +37,18 @@ let game = new Game(player, playground)
 
 window.addEventListener('keypress', movePlayer)
 
-function movePlayer(rudolf) {
-  if (rudolf.code == 'KeyW') {
+function movePlayer(evt) {
+  if(evt.code == 'KeyW') {
     game.move(0, -10)
   }
-  if (rudolf.code == "KeyS") {
+  if(evt.code == "KeyS") {
     game.move(0, 10)
   }
-  if (rudolf.code == 'KeyA') {
+  if(evt.code == 'KeyA') {
     game.move(-10, 0)
   }
-  if (rudolf.code == "KeyD") {
+  if(evt.code == "KeyD") {
     game.move(10, 0)
   }
 
 }
-
-
-
-
-
-
-
-
-
-function pozdrav(jmeno = 'RandomUser') {
-  console.log('Ahoj já jsem ' + jmeno)
-}
-
-pozdrav('Pepa')
-pozdrav()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
